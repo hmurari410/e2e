@@ -5,28 +5,252 @@ package com.thaumaturzy.b2b;
  */
 
 @javax.persistence.Entity
-public class CandidateDetails implements java.io.Serializable {
+public class CandidateDetails implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "CANDIDATEDETAILS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "CANDIDATEDETAILS_ID_GENERATOR", sequenceName = "CANDIDATEDETAILS_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(generator = "CANDIDATEDETAILS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "CANDIDATEDETAILS_ID_GENERATOR", sequenceName = "CANDIDATEDETAILS_ID_SEQ")
+   @org.kie.api.definition.type.Label("ID")
+   private java.lang.Long id;
 
-    public CandidateDetails() {
-    }
-    
-    public CandidateDetails(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "First Name")
+   private java.lang.String first_Name;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "Last Name")
+   private java.lang.String last_Name;
+
+   @org.kie.api.definition.type.Label(value = "Middle Name")
+   private java.lang.String middle_Name;
+
+   @org.kie.api.definition.type.Label(value = "Employee ID")
+   private java.lang.String employee_ID;
+
+   @org.kie.api.definition.type.Label(value = "Candidate ID")
+   private java.lang.String candidate_ID;
+
+   @org.kie.api.definition.type.Label(value = "Date Of Birth")
+   private java.util.Date date_Of_Birth;
+
+   @org.kie.api.definition.type.Label(value = "SSN")
+   private java.lang.String SSN;
+
+   @org.kie.api.definition.type.Label(value = "Country Of CitizenShip")
+   private java.lang.String country_CitizenShip;
+
+   @org.kie.api.definition.type.Label(value = "Place Of Birth")
+   private java.lang.String place_Birth;
+
+   @org.kie.api.definition.type.Label(value = "Marital Status")
+   private java.lang.String marital_Status;
+
+   @org.kie.api.definition.type.Label(value = "ClaimedDependents")
+   private java.lang.Integer claimed_Dependents;
+
+   @org.kie.api.definition.type.Label(value = "Organization Email ID")
+   private java.lang.String org_Email_ID;
+
+   @org.kie.api.definition.type.Label(value = "Personal EmailID")
+   private java.lang.String personal_Email_ID;
+
+   @org.kie.api.definition.type.Label(value = "Mobile Number")
+   private java.lang.String mobile_Number;
+
+   @org.kie.api.definition.type.Label(value = "Alternate Number")
+   private java.lang.String alternate_Number;
+
+   public CandidateDetails()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.lang.String getFirst_Name()
+   {
+      return this.first_Name;
+   }
+
+   public void setFirst_Name(java.lang.String first_Name)
+   {
+      this.first_Name = first_Name;
+   }
+
+   public java.lang.String getLast_Name()
+   {
+      return this.last_Name;
+   }
+
+   public void setLast_Name(java.lang.String last_Name)
+   {
+      this.last_Name = last_Name;
+   }
+
+   public java.lang.String getMiddle_Name()
+   {
+      return this.middle_Name;
+   }
+
+   public void setMiddle_Name(java.lang.String middle_Name)
+   {
+      this.middle_Name = middle_Name;
+   }
+
+   public java.lang.String getEmployee_ID()
+   {
+      return this.employee_ID;
+   }
+
+   public void setEmployee_ID(java.lang.String employee_ID)
+   {
+      this.employee_ID = employee_ID;
+   }
+
+   public java.lang.String getCandidate_ID()
+   {
+      return this.candidate_ID;
+   }
+
+   public void setCandidate_ID(java.lang.String candidate_ID)
+   {
+      this.candidate_ID = candidate_ID;
+   }
+
+   public java.util.Date getDate_Of_Birth()
+   {
+      return this.date_Of_Birth;
+   }
+
+   public void setDate_Of_Birth(java.util.Date date_Of_Birth)
+   {
+      this.date_Of_Birth = date_Of_Birth;
+   }
+
+   public java.lang.String getSSN()
+   {
+      return this.SSN;
+   }
+
+   public void setSSN(java.lang.String SSN)
+   {
+      this.SSN = SSN;
+   }
+
+   public java.lang.String getCountry_CitizenShip()
+   {
+      return this.country_CitizenShip;
+   }
+
+   public void setCountry_CitizenShip(java.lang.String country_CitizenShip)
+   {
+      this.country_CitizenShip = country_CitizenShip;
+   }
+
+   public java.lang.String getPlace_Birth()
+   {
+      return this.place_Birth;
+   }
+
+   public void setPlace_Birth(java.lang.String place_Birth)
+   {
+      this.place_Birth = place_Birth;
+   }
+
+   public java.lang.String getMarital_Status()
+   {
+      return this.marital_Status;
+   }
+
+   public void setMarital_Status(java.lang.String marital_Status)
+   {
+      this.marital_Status = marital_Status;
+   }
+
+   public java.lang.Integer getClaimed_Dependents()
+   {
+      return this.claimed_Dependents;
+   }
+
+   public void setClaimed_Dependents(java.lang.Integer claimed_Dependents)
+   {
+      this.claimed_Dependents = claimed_Dependents;
+   }
+
+   public java.lang.String getOrg_Email_ID()
+   {
+      return this.org_Email_ID;
+   }
+
+   public void setOrg_Email_ID(java.lang.String org_Email_ID)
+   {
+      this.org_Email_ID = org_Email_ID;
+   }
+
+   public java.lang.String getPersonal_Email_ID()
+   {
+      return this.personal_Email_ID;
+   }
+
+   public void setPersonal_Email_ID(java.lang.String personal_Email_ID)
+   {
+      this.personal_Email_ID = personal_Email_ID;
+   }
+
+   public java.lang.String getMobile_Number()
+   {
+      return this.mobile_Number;
+   }
+
+   public void setMobile_Number(java.lang.String mobile_Number)
+   {
+      this.mobile_Number = mobile_Number;
+   }
+
+   public java.lang.String getAlternate_Number()
+   {
+      return this.alternate_Number;
+   }
+
+   public void setAlternate_Number(java.lang.String alternate_Number)
+   {
+      this.alternate_Number = alternate_Number;
+   }
+
+   public CandidateDetails(java.lang.Long id, java.lang.String first_Name,
+         java.lang.String last_Name, java.lang.String middle_Name,
+         java.lang.String employee_ID, java.lang.String candidate_ID,
+         java.util.Date date_Of_Birth, java.lang.String SSN,
+         java.lang.String country_CitizenShip, java.lang.String place_Birth,
+         java.lang.String marital_Status,
+         java.lang.Integer claimed_Dependents,
+         java.lang.String org_Email_ID, java.lang.String personal_Email_ID,
+         java.lang.String mobile_Number, java.lang.String alternate_Number)
+   {
+      this.id = id;
+      this.first_Name = first_Name;
+      this.last_Name = last_Name;
+      this.middle_Name = middle_Name;
+      this.employee_ID = employee_ID;
+      this.candidate_ID = candidate_ID;
+      this.date_Of_Birth = date_Of_Birth;
+      this.SSN = SSN;
+      this.country_CitizenShip = country_CitizenShip;
+      this.place_Birth = place_Birth;
+      this.marital_Status = marital_Status;
+      this.claimed_Dependents = claimed_Dependents;
+      this.org_Email_ID = org_Email_ID;
+      this.personal_Email_ID = personal_Email_ID;
+      this.mobile_Number = mobile_Number;
+      this.alternate_Number = alternate_Number;
+   }
 
 }
