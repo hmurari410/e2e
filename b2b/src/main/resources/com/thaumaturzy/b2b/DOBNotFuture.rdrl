@@ -1,0 +1,9 @@
+package com.thaumaturzy.b2b;
+
+import java.lang.Number;
+
+rule "DOBNotFuture"
+	dialect "mvel"
+	when
+	then
+end
