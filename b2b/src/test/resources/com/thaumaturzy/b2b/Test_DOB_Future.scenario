@@ -15,13 +15,17 @@
       <name>DOB</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>63</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues/>
       <name>CandidateDetails</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2018-05-17 06:41:39.682 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.thaumaturzy.b2b</packageName>
