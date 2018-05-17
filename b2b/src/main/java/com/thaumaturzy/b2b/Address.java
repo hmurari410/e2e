@@ -5,28 +5,105 @@ package com.thaumaturzy.b2b;
  */
 
 @javax.persistence.Entity
-public class Address implements java.io.Serializable {
+public class Address implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "ADDRESS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "ADDRESS_ID_GENERATOR", sequenceName = "ADDRESS_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(generator = "ADDRESS_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "ADDRESS_ID_GENERATOR", sequenceName = "ADDRESS_ID_SEQ")
+   private java.lang.Long id;
 
-    public Address() {
-    }
-    
-    public Address(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "Street Address")
+   private java.lang.String address_1;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   @org.kie.api.definition.type.Label(value = "Apt/Unit/Door Number")
+   private java.lang.String address_2;
+
+   @org.kie.api.definition.type.Label(value = "City")
+   private java.lang.String city;
+
+   @org.kie.api.definition.type.Label(value = "State")
+   private java.lang.String state;
+
+   @org.kie.api.definition.type.Label(value = "Zip")
+   private java.lang.String zip;
+
+   public Address()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.lang.String getAddress_1()
+   {
+      return this.address_1;
+   }
+
+   public void setAddress_1(java.lang.String address_1)
+   {
+      this.address_1 = address_1;
+   }
+
+   public java.lang.String getAddress_2()
+   {
+      return this.address_2;
+   }
+
+   public void setAddress_2(java.lang.String address_2)
+   {
+      this.address_2 = address_2;
+   }
+
+   public java.lang.String getCity()
+   {
+      return this.city;
+   }
+
+   public void setCity(java.lang.String city)
+   {
+      this.city = city;
+   }
+
+   public java.lang.String getState()
+   {
+      return this.state;
+   }
+
+   public void setState(java.lang.String state)
+   {
+      this.state = state;
+   }
+
+   public java.lang.String getZip()
+   {
+      return this.zip;
+   }
+
+   public void setZip(java.lang.String zip)
+   {
+      this.zip = zip;
+   }
+
+   public Address(java.lang.Long id, java.lang.String address_1,
+         java.lang.String address_2, java.lang.String city,
+         java.lang.String state, java.lang.String zip)
+   {
+      this.id = id;
+      this.address_1 = address_1;
+      this.address_2 = address_2;
+      this.city = city;
+      this.state = state;
+      this.zip = zip;
+   }
 
 }
