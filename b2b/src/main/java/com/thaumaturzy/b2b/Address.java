@@ -15,20 +15,23 @@ public class Address implements java.io.Serializable
    @javax.persistence.SequenceGenerator(name = "ADDRESS_ID_GENERATOR", sequenceName = "ADDRESS_ID_SEQ")
    private java.lang.Long id;
 
-   @org.kie.api.definition.type.Label(value = "Street Address")
+   @org.kie.api.definition.type.Label("Street Address")
    private java.lang.String address_1;
 
-   @org.kie.api.definition.type.Label(value = "Apt/Unit/Door Number")
+   @org.kie.api.definition.type.Label("Apt/Unit/Door Number")
    private java.lang.String address_2;
 
-   @org.kie.api.definition.type.Label(value = "City")
+   @org.kie.api.definition.type.Label("City")
    private java.lang.String city;
 
-   @org.kie.api.definition.type.Label(value = "State")
+   @org.kie.api.definition.type.Label("State")
    private java.lang.String state;
 
-   @org.kie.api.definition.type.Label(value = "Zip")
+   @org.kie.api.definition.type.Label("Zip")
    private java.lang.String zip;
+
+   @org.kie.api.definition.type.Label(value = "CandidateID")
+   private java.lang.String candidate_ID;
 
    public Address()
    {
@@ -94,9 +97,20 @@ public class Address implements java.io.Serializable
       this.zip = zip;
    }
 
+   public java.lang.String getCandidate_ID()
+   {
+      return this.candidate_ID;
+   }
+
+   public void setCandidate_ID(java.lang.String candidate_ID)
+   {
+      this.candidate_ID = candidate_ID;
+   }
+
    public Address(java.lang.Long id, java.lang.String address_1,
          java.lang.String address_2, java.lang.String city,
-         java.lang.String state, java.lang.String zip)
+         java.lang.String state, java.lang.String zip,
+         java.lang.String candidate_ID)
    {
       this.id = id;
       this.address_1 = address_1;
@@ -104,6 +118,7 @@ public class Address implements java.io.Serializable
       this.city = city;
       this.state = state;
       this.zip = zip;
+      this.candidate_ID = candidate_ID;
    }
 
 }
