@@ -7,5 +7,5 @@ rule "DOBNotFuture"
 	when
 		CandidateDetails( date_Of_Birth >= "17-May-2018" )
 	then
-		Date of Birth Cannot be Future Date
+		"Date of Birth Cannot be Future Date"
 end
