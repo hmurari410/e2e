@@ -1,0 +1,53 @@
+
+<form id="162088023">
+<property name="name" value="EnterLCADetails-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="ID_first_Name" type="InputText" id="2057148116">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;First Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="LCA-1/first_Name"/>
+<property name="outputBinding" value="LCAO-1/first_Name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="ID_last_Name" type="InputText" id="1628330981">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Last Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="LCA-1/last_Name"/>
+<property name="outputBinding" value="LCAO-1/last_Name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="ID_middle_Name" type="InputText" id="197019992">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Middle Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="LCA-1/middle_Name"/>
+<property name="outputBinding" value="LCAO-1/middle_Name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="ID_date_Of_Birth" type="InputDate" id="498984626">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Date Of Birthquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="LCA-1/date_Of_Birth"/>
+<property name="outputBinding" value="LCAO-1/date_Of_Birth"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="LCA-1" name="#9BCAFA" type="dataModelerEntry" outId="LCAO-1" value="com.thaumaturzy.b2b.CandidateDetails" id="ID"/>
+</form>
